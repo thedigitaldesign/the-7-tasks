@@ -1,15 +1,22 @@
 <script lang="ts">
+	import type { Snippet } from "svelte"
 	let { 
     name = 'Thayne',
-    fake_name
+    fake_name,
+		children,
+		second_child
   }: { 
     name: string
     fake_name?: string
+		children: Snippet,
+		second_child: Snippet
   } = $props()
 </script>
 
 <header class="bg-pink-700 text-white px-4 rounded-lg">
-	<h1>Hello {name}</h1>
+	<h1>{@render children()} {name}</h1>
+
+	{@render second_child('Me hahahah')}
 
 	<h2>Svelte 5 Basics</h2>
 	<ul>
