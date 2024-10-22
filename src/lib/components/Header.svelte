@@ -15,6 +15,7 @@
 	<ul>
 		<li><a href="/basics/intro">Rune: $state</a></li>
 		<li><a href="/basics/derived">Rune: $derived</a></li>
+		<li><a href="/basics/template_logic">Template Conditions and Logic</a></li>
 	</ul>
 
 	<br />
